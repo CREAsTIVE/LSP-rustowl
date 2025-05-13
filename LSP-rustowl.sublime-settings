@@ -1,7 +1,7 @@
 {
 	"settings": {
-		// May be "hover", "mouse" or "none"
-		"rustowl.hover_type": "hover",
+		// May be "cursor", "mouse" or "none"
+		"rustowl.hover_type": "cursor",
 
 		// types, that must be shown as annotations 
 		// (separated by "," without spaces)
