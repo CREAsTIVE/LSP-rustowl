@@ -5,7 +5,10 @@
 
 		// types, that must be shown as annotations 
 		// (separated by "," without spaces)
-		"rustowl.show_annotations": ""
+		"rustowl.show_annotations": "",
+
+		// rustowl LSP binary path (leave empty for default)
+		"rustowl.bin": ""
 	},
 	"command": [
 		"${rustowl_exec}"

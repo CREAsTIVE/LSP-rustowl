@@ -36,10 +36,11 @@ def is_windows():
     return sublime.platform == "windows"
 
 
-def get_setting(view: sublime.View, key: str, default: Optional[Union[str, bool]] = None) -> Any:
-    settings = view.settings()
-    if settings.has(key):
-        return settings.get(key)
+def get_setting(view: Optional[sublime.View], key: str, default: Optional[Union[str, bool]] = None) -> Any:
+    if view:
+        settings = view.settings()
+        if settings.has(key):
+            return settings.get(key)
     settings = sublime.load_settings('LSP-rustowl.sublime-settings').get("settings", {})
     return settings.get(key, default)
 
@@ -116,7 +117,7 @@ class Rustowl(AbstractPlugin):
 
     @classmethod
     def rustowl_exec(cls):
-        path = sublime.load_settings("LSP-rustowl.sublime-settings").get("rustowl_path")
+        path = get_setting(None, "rustowl.bin")
         if path and os.path.isfile(path):
             return path
 
