@@ -2,6 +2,10 @@
 
 This plugin will add rustowl support to Sublime Text using sublime [LSP](https://github.com/sublimelsp/LSP)
 
+### Configuration
+
+To configure that plugin open commande pallete (`ctrl + shift + p`) and enter `Preferences: LSP-rustowl Settings`
+
 ### Instalation
 
 * Install `LSP` plugin from package control
