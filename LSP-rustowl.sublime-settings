@@ -1,0 +1,14 @@
+{
+	"settings": {
+		// May be "hover", "mouse" or "none"
+		"rustowl.hover_type": "hover",
+
+		// types, that must be shown as annotations 
+		// (separated by "," without spaces)
+		"rustowl.show_annotations": ""
+	},
+	"command": [
+		"${rustowl_exec}"
+	],
+	"selector": "source.rust"
+}
