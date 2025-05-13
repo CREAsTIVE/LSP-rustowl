@@ -4,7 +4,9 @@
 		"rustowl.hover_type": "cursor",
 
 		// types, that must be shown as annotations 
-		// (separated by "," without spaces)
+		// (separated by ",")
+		// possible values: 
+		// lifetime, imm_borrow, mut_borrow, move, call, outlive, shared_mut
 		"rustowl.show_annotations": "",
 
 		// rustowl LSP binary path (leave empty for default)
