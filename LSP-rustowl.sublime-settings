@@ -9,11 +9,14 @@
 		// lifetime, imm_borrow, mut_borrow, move, call, outlive, shared_mut
 		"rustowl.show_annotations": "",
 
-		// rustowl LSP binary path (leave empty for default)
-		"rustowl.bin": ""
+		// rustowl LSP binary path
+		// if defined as null will install latest version
+		// (usually into "C:\\Users\\{User}\\AppData\\Local\\Sublime Text 3\\Package Storage\\LSP-rustowl\\rustowl.exe")
+		"rustowl.bin": null, 
 	},
 	"command": [
-		"${rustowl_exec}"
+		"${rustowl_bin}",
+		"--quiet"
 	],
 	"selector": "source.rust"
 }
