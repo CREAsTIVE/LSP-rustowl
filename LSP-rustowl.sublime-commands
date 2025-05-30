@@ -6,5 +6,13 @@
             "base_file": "${packages}/LSP-rustowl/LSP-rustowl.sublime-settings",
             "default": "// Settings in here override those in \"LSP-rustowl/LSP-rustowl.sublime-settings\"\n{\n\t$0\n}\n"
         }
-	}
+	},
+    {
+        "caption": "Rustowl: Analyze lifetime",
+        "command": "lsp_rustowl_analyze"
+    }, 
+    {
+        "caption": "Rustowl: Clear",
+        "command": "lsp_rustowl_clear"
+    }
 ]
