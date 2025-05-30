@@ -22,7 +22,7 @@ from typing import Optional, Union, Any
 import shutil
 
 SESSION_NAME = "rustowl"
-LSP_SERVER_VERSION = "0.3.3"
+LSP_SERVER_VERSION = "0.3.4"  # without "v."
 BASE_URL = "https://github.com/cordx56/rustowl/releases/download/v{version}/rustowl-{arch}-{platform}{ext}"
 
 colors = {
