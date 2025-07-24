@@ -19,14 +19,14 @@ If you set property `rustowl.hover_type` to `"none"`, you can use next commands 
 
 To configure that plugin open commande pallete (`ctrl + shift + p`) and enter `Preferences: LSP-rustowl Settings`
 
-## Instalation
+## Manual Installation
+
+Clone [LSP repository](https://github.com/sublimelsp/LSP) and [this repository](https://github.com/CREAsTIVE/LSP-rustowl) into your'e sublime `Package` folder. 
+
+## Instalation (CURRENTLY UNAVAILABLE IN PACKAGE CONTROL, SEE [#1](https://github.com/CREAsTIVE/LSP-rustowl/issues/1))
 
 * Install `LSP` plugin from package control
 
 * Install `LSP-rustowl` plugin from package control
 
 * Restart Sublime
-
-## Dev installation
-
-Clone `LSP` and `LSP-rustowl` repositories into your'e Sublime `Package` folder. Change `DEBUG_LOG = False` to `DEBUG_LOG = True` at `plugin.py` for additional logging into console.
